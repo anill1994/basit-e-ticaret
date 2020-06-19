@@ -1,0 +1,8 @@
+C:\Users\anil_\source\repos\CleanerPower\CleanerPower.Entity\bin\Debug\netcoreapp3.1\CleanerPower.Entity.deps.json
+C:\Users\anil_\source\repos\CleanerPower\CleanerPower.Entity\bin\Debug\netcoreapp3.1\CleanerPower.Entity.dll
+C:\Users\anil_\source\repos\CleanerPower\CleanerPower.Entity\obj\Debug\netcoreapp3.1\CleanerPower.Entity.AssemblyInfoInputs.cache
+C:\Users\anil_\source\repos\CleanerPower\CleanerPower.Entity\obj\Debug\netcoreapp3.1\CleanerPower.Entity.AssemblyInfo.cs
+C:\Users\anil_\source\repos\CleanerPower\CleanerPower.Entity\bin\Debug\netcoreapp3.1\CleanerPower.Entity.pdb
+C:\Users\anil_\source\repos\CleanerPower\CleanerPower.Entity\obj\Debug\netcoreapp3.1\CleanerPower.Entity.csprojAssemblyReference.cache
+C:\Users\anil_\source\repos\CleanerPower\CleanerPower.Entity\obj\Debug\netcoreapp3.1\CleanerPower.Entity.dll
+C:\Users\anil_\source\repos\CleanerPower\CleanerPower.Entity\obj\Debug\netcoreapp3.1\CleanerPower.Entity.pdb

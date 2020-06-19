@@ -1,0 +1,222 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\anil_\\source\\repos\\CleanerPower\\CleanerPower\\CleanerPower.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\anil_\\source\\repos\\CleanerPower\\CleanerPower.Data\\CleanerPower.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\anil_\\source\\repos\\CleanerPower\\CleanerPower.Data\\CleanerPower.Data.csproj",
+        "projectName": "CleanerPower.Data",
+        "projectPath": "C:\\Users\\anil_\\source\\repos\\CleanerPower\\CleanerPower.Data\\CleanerPower.Data.csproj",
+        "packagesPath": "C:\\Users\\anil_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\anil_\\source\\repos\\CleanerPower\\CleanerPower.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\anil_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\anil_\\source\\repos\\CleanerPower\\CleanerPower.Entity\\CleanerPower.Entity.csproj": {
+                "projectPath": "C:\\Users\\anil_\\source\\repos\\CleanerPower\\CleanerPower.Entity\\CleanerPower.Entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\anil_\\source\\repos\\CleanerPower\\CleanerPower.Entity\\CleanerPower.Entity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\anil_\\source\\repos\\CleanerPower\\CleanerPower.Entity\\CleanerPower.Entity.csproj",
+        "projectName": "CleanerPower.Entity",
+        "projectPath": "C:\\Users\\anil_\\source\\repos\\CleanerPower\\CleanerPower.Entity\\CleanerPower.Entity.csproj",
+        "packagesPath": "C:\\Users\\anil_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\anil_\\source\\repos\\CleanerPower\\CleanerPower.Entity\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\anil_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\anil_\\source\\repos\\CleanerPower\\CleanerPower\\CleanerPower.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\anil_\\source\\repos\\CleanerPower\\CleanerPower\\CleanerPower.csproj",
+        "projectName": "CleanerPower",
+        "projectPath": "C:\\Users\\anil_\\source\\repos\\CleanerPower\\CleanerPower\\CleanerPower.csproj",
+        "packagesPath": "C:\\Users\\anil_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\anil_\\source\\repos\\CleanerPower\\CleanerPower\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\anil_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\anil_\\source\\repos\\CleanerPower\\CleanerPower.Data\\CleanerPower.Data.csproj": {
+                "projectPath": "C:\\Users\\anil_\\source\\repos\\CleanerPower\\CleanerPower.Data\\CleanerPower.Data.csproj"
+              },
+              "C:\\Users\\anil_\\source\\repos\\CleanerPower\\CleanerPower.Entity\\CleanerPower.Entity.csproj": {
+                "projectPath": "C:\\Users\\anil_\\source\\repos\\CleanerPower\\CleanerPower.Entity\\CleanerPower.Entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "EPPlus": {
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Syncfusion.XlsIO.Net.Core": {
+              "target": "Package",
+              "version": "[17.4.0.55, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

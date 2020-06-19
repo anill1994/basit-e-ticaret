@@ -1,0 +1,14 @@
+﻿@model Order
+@{
+    ViewData["Title"] = "Delete";
+      Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>
+    Kaydı silmek istiyor musunuz?
+</h1>
+
+<form asp-action="Delete" asp-controller="Home" method="post">
+    <input type="hidden" asp-for="OrderId" />
+    <button type="submit" class="btn btn-primary">Sil</button>
+</form> 

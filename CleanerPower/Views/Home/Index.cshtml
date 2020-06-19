@@ -1,0 +1,153 @@
+﻿@model Compount
+@{
+    ViewData["Title"] = "Home Page";
+}
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Button used to open the contact form - fixed at the bottom of the page */
+        .open-button {
+           color:green;
+            cursor: pointer;
+            opacity: 0.8;
+            position: fixed;
+            bottom: 23px;
+            right: 28px;
+        }
+
+        /* The popup form - hidden by default */
+        .form-popup {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            right: 15px;
+            border: 3px solid #f1f1f1;
+            z-index: 9;
+        }
+
+        /* Add styles to the form container */
+        .form-container {
+            max-width: 300px;
+            background-color: white;
+        }
+
+            /* Full-width input fields */
+            .form-container input[type=text], textarea, .form-container input[type=password] {
+                width: 100%;
+                padding: 15px;
+                margin: 5px 0 22px 0;
+                border: none;
+                background: #f1f1f1;
+            }
+
+                /* When the inputs get focus, do something */
+                .form-container input[type=text]:focus, textarea, .form-container input[type=password]:focus {
+                    background-color: #ddd;
+                    outline: none;
+                }
+
+            /* Set a style for the submit/login button */
+            .form-container .btn {
+                background-color: #4CAF50;
+                color: white;
+                padding: 16px 20px;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+                margin-bottom: 10px;
+                opacity: 0.8;
+            }
+
+            /* Add a red background color to the cancel button */
+            .form-container .cancel {
+                background-color: red;
+            }
+
+            /* Add some hover effects to buttons */
+            .form-container .btn:hover, .open-button:hover {
+                opacity: 1;
+            }
+    </style>
+<div>
+    <img class="w-100" src="~/img/background.jpg" alt="Alternate Text" />
+</div>
+<div class="bg h-100">
+    <div class="text-center">
+        <img class="w-50 " src="~/img/form-head.png" alt="Alternate Text" />
+    </div>
+
+
+    <div class="container bg-light p-5 w-75" style="border-radius:5%">
+        <h1 class="text-center">Sipariş Formu</h1>
+        <br />
+
+        <form asp-controller="Home" asp-action="Index" method="post">
+            <div class="form-group w-50 float-left">
+                <label>Ad Soyad</label>
+                <input asp-for="Order.Name" class="form-control" required>
+            </div>
+            <div class="form-group w-50 float-left pl-2">
+                <label>Telefon</label>
+                <input asp-for="Order.Phone" placeholder="(___) ___ __ __   sıfır koymadan giriniz" class="form-control" required pattern="^5(0[5-7]|[3-5]\d) ?\d{3} ?\d{4}$">
+            </div>
+            <div class="form-group w-50 float-left">
+                <label>Adet</label>
+                <select asp-for="Order.Pieces" class="form-control" required>
+                    <option disabled selected value="">Ürün adedi seçiniz.</option>
+                    <option name="1 adet 69 tl">1 adet 69 tl</option>
+                    <option name="2 adet 109 tl">2 adet 109 tl</option>
+                </select>
+            </div>
+            <div class="form-group w-50 float-left pl-2">
+                <label>Ödeme Şekli</label>
+                <select asp-for="Order.Pay" class="form-control" required>
+                    <option disabled selected value="">Ödeme Şeklini Seçiniz</option>
+                    <option name="Kapıda Ödeme">Kapıda Ödeme</option>
+                    <option name="Kredi Kartıyla Ödeme">Kredi Kartıyla Ödeme</option>
+                </select>
+            </div>
+            <div class="form-group w-50 float-left">
+                <label>İl</label>
+                <input asp-for="Order.Province" class="form-control" required>
+            </div>
+            <div class="form-group  w-50 float-left pl-2">
+                <label>İlçe</label>
+                <input asp-for="Order.District" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label>Adres</label>
+                <textarea rows="4" asp-for="Order.Address" class="form-control" required> </textarea>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-danger" type="submit">Siparişi Tamamla</button>
+            </div>
+        </form>
+    </div>
+    <i class="fas fa-envelope fa-3x open-button" onclick="openForm()"></i>
+
+    <div class="form-popup" id="myForm">
+        <form asp-controller="Home" asp-action="Index" class="form-container">
+            <div style="background-color:#4CAF50;  color:white; font-size:14px;  margin:0; padding:10px;">
+                <h3>Çevrim Dışı</h3>
+                <p>Lütfen aşağıdaki formu doldurun mümkün olan en kısa sürede size dönüş yapılacaktır</p>
+            </div>
+            <div style="padding:15px;">
+                <input asp-for="Message.Name" class="form-control" placeholder="İsim" required>
+                <input type="email" asp-for="Message.Email" class="form-control" placeholder="Email" required>
+                <textarea asp-for="Message.Mesaj" class="form-control" placeholder="Mesajınız" required> </textarea>
+            </div>
+            <button type="submit" class="btn">Gönder</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Kapat</button>
+        </form>
+    </div>
+
+    <div class="text-center">
+        <img class="w-50" src="~/img/footer-logo.png" alt="Alternate Text" />
+    </div>
+</div>
